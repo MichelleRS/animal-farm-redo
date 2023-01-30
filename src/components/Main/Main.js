@@ -8,7 +8,13 @@ export default function Main() {
     <main>
       {/* use .map to render Animal. for each animal in data.js */}
       {animals.map((animal) => (
-        <Animal key={animal.type} name={animal.name} />
+        <Animal
+          key={animal.type}
+          top={animal.top}
+          left={animal.left}
+          name={animal.name}
+          says={animal.says}
+        />
       ))}
     </main>
   );
