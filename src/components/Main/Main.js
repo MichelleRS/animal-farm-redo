@@ -12,6 +12,7 @@ export default function Main() {
           key={animal.type}
           top={animal.top}
           left={animal.left}
+          image={animal.type}
           name={animal.name}
           says={animal.says}
         />
